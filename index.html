@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jazlyn Jane A. Fajutrao — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Quicksand:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ LANDING ============ -->
+  <div id="landing">
+    <div class="laptop-stage" id="laptopStage">
+      <button class="laptop" id="laptopBtn" aria-label="Open Jazlyn's portfolio">
+        <div class="lid-wrap">
+          <div class="screen"><div class="monogram">JJF</div></div>
+          <div class="lid">
+            <div class="brand">
+              <div class="mark">PORTFOLIO</div>
+              <div class="name">Jazlyn Jane A. Fajutrao</div>
+            </div>
+          </div>
+        </div>
+        <div class="base"></div>
+      </button>
+    </div>
+    <p class="hint">click the laptop to open</p>
+  </div>
+
+  <!-- ============ LOCK SCREEN ============ -->
+  <div id="lockScreen" aria-hidden="true">
+    <div class="lock-content">
+      <div class="lock-time" id="lockTime">--:--</div>
+      <div class="lock-date" id="lockDate">Loading...</div>
+      <div class="lock-card">
+        <strong>Hi, I'm Jazlyn Jane. ✦</strong>
+        <p>
+          I'm an Information Technology student and aspiring developer who enjoys
+          creating practical systems, expressive websites, and interactive digital experiences.
+          Welcome to my little desktop portfolio.
+        </p>
+      </div>
+      <div class="unlock-hint">click anywhere to enter the desktop</div>
+    </div>
+  </div>
+
+  <!-- ============ DESKTOP ============ -->
+  <div id="desktop">
+    <div class="topbar">
+      <div class="who"><span class="dot"></span> Jazlyn Jane A. Fajutrao</div>
+      <div><span style="opacity:.65;">JJF OS</span> &nbsp; <span id="clock">—</span></div>
+    </div>
+
+    <div class="desktop-body" id="folderGrid"></div>
+
+    <div class="start-menu" id="startMenu">
+      <div class="start-profile">
+        <strong>Jazlyn Jane A. Fajutrao</strong>
+        <span>Information Technology Portfolio</span>
+      </div>
+      <input class="start-search" id="startSearch" placeholder="Search portfolio..." aria-label="Search portfolio">
+      <button class="start-item" data-start-folder="projects">📁 &nbsp; Projects</button>
+      <button class="start-item" data-start-folder="experience">💼 &nbsp; Experience</button>
+      <button class="start-item" data-start-folder="skills">🛠 &nbsp; Skills</button>
+      <button class="start-item" data-start-folder="about">👤 &nbsp; About Me</button>
+      <button class="start-item" data-start-folder="contact">✉ &nbsp; Contact</button>
+      <button class="start-item" data-start-folder="resume">📄 &nbsp; Resume</button>
+      <div class="start-bottom">
+        <button class="start-item" id="startTerminal">⌘ &nbsp; Terminal</button>
+        <button class="start-item" id="startShutdown">⏻ &nbsp; Shut down</button>
+      </div>
+    </div>
+
+    <div class="taskbar">
+      <button class="task-btn start-btn" id="startBtn" aria-label="Open Start menu">JJF</button>
+      <button class="task-btn" id="searchBtn" title="Search">⌕</button>
+      <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">☾</button>
+      <div class="task-divider"></div>
+      <div class="task-apps" id="taskApps"></div>
+      <div class="tray">
+        <span>⌁</span><span>◖</span><span>▰</span>
+        <span class="views" id="viewCount">👁 0</span>
+        <span id="taskClock">—</span>
+      </div>
+      <button class="task-btn power-btn" id="powerBtn" title="Shut down">⏻</button>
+    </div>
+  </div>
+
+  <!-- ============ WINDOW TEMPLATE ============ -->
+  <div class="scrim" id="scrim">
+    <div class="window" role="dialog" aria-modal="true" aria-labelledby="winTitle">
+      <div class="window-head" id="windowHead">
+        <div class="title"><span class="swatch" id="winSwatch"></span><span id="winTitle"></span></div>
+        <div class="window-controls">
+          <button class="window-control" id="winMin" aria-label="Minimize window">—</button>
+          <button class="window-control" id="winMax" aria-label="Maximize window">□</button>
+          <button class="window-control close" id="winClose" aria-label="Close window">✕</button>
+        </div>
+      </div>
+      <div class="window-body" id="winBody"></div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
